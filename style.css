@@ -19,7 +19,8 @@
 body
 {
     background-color: var(--purple-cor);
-    font-family: 'Comforter',sans-serif;
+    font-family: 'Inter',sans-serif;
+    
     display: flex;          /*coloca tudo em linha*/
     flex-direction: column; /*coloca tudo em coluna*/
     align-items: center;    /*alinha horizontalmente*/
@@ -55,6 +56,48 @@ body
     right: 40px;
 }
 
+.testemunho {
+    line-height: 28px;
+    text-align: justify;
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user .userImg {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+
+.user .userDetails {
+    margin-left: 10px;
+}
+.user .userName{
+    margin: 0;
+}
+
+.user .role {
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.progBar{
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 5s linear infinite;
+    transform-origin: left;/*para começar da esquerda e não do centro por defeito*/
+}
+
+/*KEYFRAMES //////////////////////////////////////////////////*/
+@keyframes grow{
+    0%{
+        transform: scaleX(0);
+    }
+}
 
 /*///////////////MEDIA QUERYS////////////////////////////////////////////////////////////////////*/
 
@@ -69,7 +112,6 @@ body
     {
         /* display: none; */
     };
-  
 
 }
 
